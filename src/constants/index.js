@@ -251,7 +251,7 @@ import {
         },
       ],
       image: enigma,
-      source_code_link: "https://github.com/anhttran166/Enigma-Machine-Simulator",
+      source_code_link: "https://github.com/anhbertz/Enigma-Machine-Simulator",
     },
     {
       name: "Six Degrees of Wikipedia",
@@ -276,7 +276,7 @@ import {
         },
       ],
       image: sixDegree,
-      source_code_link: "https://github.com/anhttran166/Six-Degrees-of-Wikipedia",
+      source_code_link: "https://github.com/anhbertz/Six-Degrees-of-Wikipedia",
     },
     {
       name: "VR Battle Chess AI",
@@ -293,7 +293,7 @@ import {
         },
       ],
       image: chessAI,
-      source_code_link: "https://github.com/anhttran166/chessAI",
+      source_code_link: "https://github.com/anhbertz/chessAI",
     },
     {
       name: "Travel Advisor App",
@@ -322,7 +322,7 @@ import {
         },
       ],
       image: travelAdviosr,
-      source_code_link: "https://github.com/anhttran166/TravelAdvisorApp",
+      source_code_link: "https://github.com/anhbertz/TravelAdvisorApp",
     },
     {
       name: "MineSweeper Simulator",
@@ -339,7 +339,7 @@ import {
         },
       ],
       image: mineSweeper,
-      source_code_link: "https://github.com/anhttran166/MineSweeper",
+      source_code_link: "https://github.com/anhbertz/MineSweeper",
     },
     {
       name: "Online Portfolio",
@@ -364,7 +364,7 @@ import {
         },
       ],
       image: portfolio,
-      source_code_link: "https://github.com/anhttran166/Anh-Tran-Portfolio",
+      source_code_link: "https://github.com/anhbertz/Anh-Tran-Portfolio",
     },
   ];
   
