@@ -200,9 +200,9 @@ import {
       iconBg: "#AAA6C3",
       date: "April 2024 – Present",
       points: [
-        "Developing and maintaining the website using Next.js to ensure a responsive and visually appealing design",
-        "Designing and implementing the Admin Page to efficiently manage the website’s content and operations",
-        "Developed and integrated C# APIs to enable key operations (add, delete, update), enhancing data interaction and user experience through real-time processing"
+        "Translated detailed Figma designs into a highly responsive website using Next.js and SCSS",
+        "Designed and implemented an admin panel to efficiently manage and organize the website’s content and operations",
+        "Developed and integrated C# APIs used for dynamically updating website's content with data provided through a MySQL database"
       ],
     },
   ];
