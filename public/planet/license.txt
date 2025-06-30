@@ -1,11 +1,11 @@
 Model Information:
-* title:	Stylized planet
-* source:	https://sketchfab.com/3d-models/stylized-planet-789725db86f547fc9163b00f302c3e70
-* author:	cmzw (https://sketchfab.com/cmzw)
+* title:	Abandoned Stylized Mailbox - Game ready
+* source:	https://sketchfab.com/3d-models/abandoned-stylized-mailbox-game-ready-1d53c3c16f4e4e78aaa105018205b592
+* author:	Den_a99 (https://sketchfab.com/den99ald)
 
 Model License:
 * license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
 * requirements:	Author must be credited. Commercial use is allowed.
 
 If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
-This work is based on "Stylized planet" (https://sketchfab.com/3d-models/stylized-planet-789725db86f547fc9163b00f302c3e70) by cmzw (https://sketchfab.com/cmzw) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+This work is based on "Abandoned Stylized Mailbox - Game ready" (https://sketchfab.com/3d-models/abandoned-stylized-mailbox-game-ready-1d53c3c16f4e4e78aaa105018205b592) by Den_a99 (https://sketchfab.com/den99ald) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

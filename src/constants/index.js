@@ -8,16 +8,12 @@ import {
     html,
     css,
     reactjs,
-    redux,
     tailwind,
     nodejs,
     mongodb,
     git,
     figma,
     docker,
-    carrent,
-    jobit,
-    tripguide,
     threejs,
     madison,
     sim,
@@ -39,7 +35,8 @@ import {
     sql,
     tableau,
     unity,
-    portfolio
+    portfolio,
+    gatech
   } from "../assets";
   
   export const navLinks = [
@@ -56,28 +53,28 @@ import {
       title: "Project",
     },
     {
+      id: "resume",
+      title: "Resume",
+    },
+    {
       id: "contact",
       title: "Contact",
     },
   ];
   
   const services = [
-    {
-      title: "Frontend Developer",
-      icon: web,
-    },
-    {
-      title: "Backend Developer",
-      icon: creator,
-    },
-    {
-      title: "Data Analyst",
-      icon: mobile,
-    },
-    {
-      title: "Full Stack Developer",
-      icon: backend,
-    },
+    // {
+    //   title: "Frontend Developer",
+    //   icon: web,
+    // },
+    // {
+    //   title: "Backend Developer",
+    //   icon: creator,
+    // },
+    // {
+    //   title: "Full Stack Developer",
+    //   icon: backend,
+    // },
   ];
   
   const technologies = [
@@ -183,34 +180,45 @@ import {
   
   const experiences = [
     {
-      title: "Database Researcher",
-      company_name: "University of Wisconsin-Madison",
-      icon: madison,
-      iconBg: "#383E56",
-      date: "June 2023 - December 2023",
-      points: [
-        "Utilized the Parquet file format specification as a reference for understanding encoding mechanisms",
-        "Analyzed and compared encoding techniques (like delta encoding for time-series) for data storage and retrieval performance by replicating them in C++",
-      ],
-    },
-    {
       title: "Full Stack Developer",
       company_name: "She Inspires Me",
       icon: sim,
       iconBg: "#AAA6C3",
       date: "April 2024 – Present",
       points: [
-        "Translated detailed Figma designs into a highly responsive website using Next.js and SCSS",
-        "Designed and implemented an admin panel to efficiently manage and organize the website’s content and operations",
-        "Developed and integrated C# APIs used for dynamically updating website's content with data provided through a MySQL database"
+        "Created a multi-page, responsive company landing page by translating Figma designs using Next.js and SCSS",
+        "Designed and implemented an admin panel that allows non-technical team members to contribute to the website content management without needing to dive into source code, reducing content update time by 70%",
+        "Developed and integrated 10+ C# APIs used for updating website’s content with data provided through a MySQL database, allowing for dynamic content loading and storage",
+        "Implemented and optimized MySQL database schema to efficiently store user data, donations, and content management system data, ensuring scalability and maintaining data integrity across the platform, managing data for 10,000+ users",
       ],
     },
+    {
+      title: "Database Researcher",
+      company_name: "University of Wisconsin-Madison",
+      icon: madison,
+      iconBg: "#383E56",
+      date: "June 2023 - December 2023",
+      points: [
+        "Utilized the column-oriented Parquet file format specification for understanding encoding mechanisms for large data compression and retrieval", 
+        "Analyzed and compared Parquet capabilities on encoding techniques like delta encoding for time-series for data storage and retrieval by implementing them in C++",
+        "Developed comprehensive test suites leveraging Arrow’s testing framework to validate Parquet file operations, data encoding mechanisms, and query processing functionality while ensuring robust error handling",
+      ],
+    },
+    
   ];
   
   const educations = [
     {
-      name:
-        "University of Wisconsin-Madison",
+      name: "Georgia Institute of Technology",
+      time: "Jan 2025 - Present",
+      degree: "Master of Science",
+      major: "Computer Science",
+      gpa: "4.0",
+      image: gatech,
+    },
+    {
+      name: "University of Wisconsin-Madison",
+      time: "Sep 2021 - Dec 2023",
       degree: "Bachelor of Science",
       major: "Computer Science",
       gpa: "3.64",
@@ -231,23 +239,19 @@ import {
     {
       name: "Enigma Machine Simulator",
       description:
-        "An Enigma Machine Simulator using Java, SQL, and AWS RDS, incorporating dynamic UI interactions with JavaScript and comprehensive encryption algorithm design. Collaborated in an agile team to ensure robust design and implementation through continuous integration and JUnit testing.",
+        "An Enigma Machine Simulator using Java, SQL, and AWS RDS, incorporating dynamic UI interactions with JavaScript and comprehensive encryption algorithm design. Collaborated in an agile team to ensure strong design and implementation through continuous integration and JUnit testing.",
       tags: [
         {
           name: "HTML, JS, CSS",
-          color: "blue-text-gradient",
         },
         {
           name: "AWS RDS",
-          color: "green-text-gradient",
         },
         {
           name: "Docker",
-          color: "green-text-gradient",
         },
         {
           name: "Java",
-          color: "pink-text-gradient",
         },
       ],
       image: enigma,
@@ -256,23 +260,19 @@ import {
     {
       name: "Six Degrees of Wikipedia",
       description:
-        "An interactive game that maps the shortest path between two Wikipedia articles using Dijkstra’s Algorithm and JSoup for data scraping. Enhanced user experience with a JavaFX interface, ensuring robust deployment with 100% JUnit code coverage.",
+        "An interactive game that maps the shortest path between two Wikipedia articles using Dijkstra’s Algorithm. Used JSoup for data scraping. Enhanced user experience with a JavaFX interface, ensuring robust deployment with 100% JUnit code coverage.",
       tags: [
         {
           name: "JavaFX",
-          color: "blue-text-gradient",
         },
         {
           name: "FXML",
-          color: "green-text-gradient",
         },
         {
           name: "Java",
-          color: "pink-text-gradient",
         },
         {
           name: "JUnit",
-          color: "pink-text-gradient",
         },
       ],
       image: sixDegree,
@@ -281,15 +281,13 @@ import {
     {
       name: "VR Battle Chess AI",
       description:
-        "A Chess AI in Unity using advanced algorithms like Monte Carlo Tree Search and Minimax, optimizing VR settings for realistic gameplay. Improved AI difficulty based on user feedback, ensuring a challenging yet accessible game experience.",
+        "A Chess AI in Unity using advanced algorithms like Monte Carlo Tree Search and Minimax. Configured VR settings for realistic gameplay. Adaptable AI difficulty based on user skill, ensuring a challenging yet accessible game experience.",
       tags: [
         {
           name: "C#",
-          color: "blue-text-gradient",
         },
         {
           name: "Unity",
-          color: "green-text-gradient",
         },
       ],
       image: chessAI,
@@ -298,27 +296,22 @@ import {
     {
       name: "Travel Advisor App",
       description:
-        "Developed and deployed an advanced Travel Advisor App utilizing Google Maps, incorporating features like geolocation, place search, and data fetching for restaurants, hotels, and attractions using Rapid APIs.",
+        "Developed an advanced Travel Advisor App utilizing Google Maps, incorporating features like geolocation, place search, and data fetching for restaurants, hotels, and attractions using Rapid APIs.",
       tags: [
         {
           name: "JavaScript",
-          color: "blue-text-gradient",
         },
         {
           name: "HTML",
-          color: "blue-text-gradient",
         },
         {
           name: "Rapid API",
-          color: "green-text-gradient",
         },
         {
           name: "Travel Advisor API",
-          color: "green-text-gradient",
         },
         {
           name: "Open Weather API",
-          color: "green-text-gradient",
         },
       ],
       image: travelAdviosr,
@@ -331,11 +324,9 @@ import {
       tags: [
         {
           name: "JavaFX",
-          color: "blue-text-gradient",
         },
         {
           name: "Java",
-          color: "pink-text-gradient",
         },
       ],
       image: mineSweeper,
@@ -348,19 +339,15 @@ import {
       tags: [
         {
           name: "Vite",
-          color: "blue-text-gradient",
         },
         {
           name: "TailwindCSS",
-          color: "green-text-gradient",
         },
         {
           name: "Three.js",
-          color: "blue-text-gradient",
         },
         {
           name: "React JS",
-          color: "pink-text-gradient",
         },
       ],
       image: portfolio,

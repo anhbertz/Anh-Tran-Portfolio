@@ -39,23 +39,25 @@ const About = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview</h2>
+        <p className={styles.sectionSubText}>Overview</p>
+        <h2 className={styles.sectionHeadText}>About Me</h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        In Backend Development, I demonstrate proficiency in <b>Java, Python, 
-        C/C++, and SQL</b>, and I have substantial experience with frameworks such as 
-        <b> Node.js</b> and tools including <b>AWS RDS and Docker</b>. I'm also a skilled 
-        Frontend Developer with experience in <b>JavaScript</b>, and expertise in frameworks 
-        like <b>React, Node.js, Next.js, and Three.js</b>. I'm a quick learner and collaborate 
-        closely with team members to create efficient, scalable, and user-friendly solutions 
-        that solve real-world problems.
+        I am a Full Stack Developer with 1 year of experience. I am also currently pursuing a Master's degree
+        in Computer Science at Georgia Institute of Technology. I have learned about different specialties such as Front-End Development,
+        Databases, Algorithms, Operating Systems, and Software Analysis and Testing. I am currently interested in learning more about 
+        AI/ML. 
       </motion.p>
-
+      <motion.p
+        variants={fadeIn("", "", 0.1, 1)}
+        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+      >
+        I would love to connect and collaborate with you! Please feel free to check out more about me with my projects below along with my skills set!
+      </motion.p>
       <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />

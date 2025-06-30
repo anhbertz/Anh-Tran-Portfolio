@@ -41,7 +41,8 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
-import madison from "./madison.png"
+import madison from "./madison.png";
+import gatech from "./gatech.png";
 import sim from "./sim.png"
 import mineSweeper from "./minesweeper.png"
 import chessAI from "./chessAI.png"
@@ -81,6 +82,7 @@ export {
   jobit,
   tripguide,
   madison,
+  gatech,
   sim,
   mineSweeper,
   chessAI,

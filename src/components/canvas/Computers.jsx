@@ -4,34 +4,26 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
 
-import { useAnimations } from '@react-three/drei';
-
 const Computers = ({ isMobile }) => {
-  const { scene, animations } = useGLTF("./desktop_pc/scene.gltf");
-  const { ref, mixer, names } = useAnimations(animations, scene);  // Attach animations to the scene
+  const computer = useGLTF("./desktop_pc/scene.gltf");
 
-  useEffect(() => {
-    if (mixer && names.length > 0) {
-      mixer.clipAction(animations[0]).play();  // Play the first animation
-    }
-  }, [mixer, names]);
   return (
-    <mesh ref={ref}>
-      <hemisphereLight intensity={0.15} groundColor='black' />
-      <pointLight intensity={1} position={[10, 10, 10]} />
+    <mesh>
+      <hemisphereLight intensity={3} groundColor='black' />
+      <pointLight intensity={1} position={[15, 10, 10]}/>
       <spotLight
-        position={isMobile ? [60, 45, 30] : [20, 45, 30]}
+        position={[-20, 50, 10]}
         angle={0.12}
         penumbra={1}
-        intensity={10000}
+        intensity={1}
         castShadow
         shadow-mapSize={1024}
       />
       <primitive
-        object={scene}
-        scale={isMobile ? 1.5 : 1.5}
-        position={isMobile ? [-8, -6, -2.2] : [0, -3.5, -2]}
-        rotation={[0, 0.3, 0]}
+        object={computer.scene}
+        scale={isMobile ? 0.7 : 0.75}
+        position={isMobile ? [-3, -1.5, -2.2] : [-2, -1, -3]}
+        rotation={[0.5, -0.2, -0.1]}
       />
     </mesh>
   );
@@ -60,21 +52,20 @@ const ComputersCanvas = () => {
       mediaQuery.removeEventListener("change", handleMediaQueryChange);
     };
   }, []);
-  
 
   return (
     <Canvas
-      frameloop='always'
+      frameloop='demand'
       shadows
       dpr={[1, 2]}
-      camera={{ position: [20, 3, 5], fov: 25 }}
+      camera={{ position: [10, 3, 50], fov: 10 }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
-          enableRotate={false} // Disable rotation
-          enableZoom={false} // Disable zoom
-          enablePan={false} // Disable panning
+          enableZoom={false}
+          maxPolarAngle={Math.PI / 2}
+          minPolarAngle={Math.PI / 2}
         />
         <Computers isMobile={isMobile} />
       </Suspense>

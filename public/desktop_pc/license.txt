@@ -1,11 +1,11 @@
 Model Information:
-* title:	Mario Waving - Character Position
-* source:	https://sketchfab.com/3d-models/mario-waving-character-position-bb44589030e94882b044cb0bf5dadbfc
-* author:	yakkoandwakko (https://sketchfab.com/yakkoandwakko)
+* title:	Computer Keyboard
+* source:	https://sketchfab.com/3d-models/computer-keyboard-68c753522af34033934f065542f20ed2
+* author:	SergioCampos99 (https://sketchfab.com/SergioCampos99)
 
 Model License:
 * license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
 * requirements:	Author must be credited. Commercial use is allowed.
 
 If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
-This work is based on "Mario Waving - Character Position" (https://sketchfab.com/3d-models/mario-waving-character-position-bb44589030e94882b044cb0bf5dadbfc) by yakkoandwakko (https://sketchfab.com/yakkoandwakko) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+This work is based on "Computer Keyboard" (https://sketchfab.com/3d-models/computer-keyboard-68c753522af34033934f065542f20ed2) by SergioCampos99 (https://sketchfab.com/SergioCampos99) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

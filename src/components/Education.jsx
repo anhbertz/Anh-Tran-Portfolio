@@ -9,6 +9,7 @@ import { educations } from "../constants";
 const EduCard = ({
   index,
   name,
+  time,
   degree,
   major,
   gpa,
@@ -21,6 +22,9 @@ const EduCard = ({
 
     <div className='mt-1'>
       <p className='text-white tracking-wider text-[22px]'>{name}</p>
+      <p className='mt-1 text-secondary text-[16px]'>
+            {time}
+          </p>
       <div className='mt-7 flex justify-between items-center gap-1'>
         <div className='flex-1 flex flex-col'>
           <p className='mt-1 text-secondary text-[16px]'>
@@ -37,8 +41,9 @@ const EduCard = ({
         <img
           src={image}
           alt={`${name}`}
-          className='w-10 h-18 rounded-full object-cover'
+          className='w-11 h-18 rounded-full object-cover'
         />
+        
       </div>
     </div>
   </motion.div>

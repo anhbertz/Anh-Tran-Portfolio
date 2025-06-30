@@ -14,12 +14,13 @@ const App = () => {
         <Education />
         <Experience />
         <Works />
-        <Certificate />
         <Tech />
+        <Certificate />
         <div className='relative z-0'>
           <Contact />
           <StarsCanvas />
         </div>
+        
       </div>
     </BrowserRouter>
   );

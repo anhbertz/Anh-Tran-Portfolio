@@ -1,5 +1,4 @@
 import React from "react";
-import {Tilt} from "react-tilt";
 
 import { styles } from "../styles";
 import { github } from "../assets";
@@ -15,7 +14,7 @@ const ProjectCard = ({
 }) => {
   return (
     <div>
-      <Tilt
+      <div 
         options={{
           max: 45,
           scale: 1,
@@ -53,13 +52,13 @@ const ProjectCard = ({
           {tags.map((tag) => (
             <p
               key={`${name}-${tag.name}`}
-              className={`text-[14px] ${tag.color}`}
+              className={`text-[14px] white-text-gradient`}
             >
               #{tag.name}
             </p>
           ))}
         </div>
-      </Tilt>
+      </div>
     </div>
   );
 };
@@ -76,7 +75,7 @@ const Works = () => {
         <p
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
-          The following projects demonstrate my abilities and expertise by presenting real-world projects. Each project is concisely described and includes links to the code repositories. These projects showcase my capacity to tackle complex problems, utilize diverse technologies, and efficiently manage them.
+        The following projects showcase my capacity to tackle complex problems and utilize diverse technologies. Each project is concisely described and includes links to the code repositories. 
         </p>
       </div>
 

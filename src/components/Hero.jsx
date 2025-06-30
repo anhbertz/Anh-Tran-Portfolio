@@ -22,6 +22,7 @@ const Hero = () => {
             I am a <br className='sm:block hidden' />
             Full Stack Developer
           </p>
+          
         </div>
       </div>
 
